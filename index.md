@@ -1,4 +1,6 @@
-Here you'll find reading materials for starting projects on LHCb physics. These are broadly grouped into two categories:
+Here you'll find reading materials for starting projects on LHCb physics. These are broadly grouped into three categories:
+
+[Introductory particle physics](introphys.html)
 
 [The LHCb detector](detector.html)
 
