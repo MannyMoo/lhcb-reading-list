@@ -7,3 +7,5 @@ The first section is an introduction, section 2 is a generic section on CP viola
 For general information about particle physics and all the different particles that've been discovered, please consult the Particle Data Group webpage and all the links from there:
 
 [http://pdg.lbl.gov](http://pdg.lbl.gov)
+
+In particular, [PDGLive](http://pdglive.lbl.gov/Viewer.action) contains a table of info on all known particles, eg the [$B^0$ meson](http://pdglive.lbl.gov/Particle.action?node=S042).
