@@ -1,7 +1,14 @@
 Here you'll find reading materials for starting projects on LHCb physics. These are broadly grouped into two categories:
 
-The LHCb detector.
+[The LHCb detector](detector.html)
 
-Flavour physics.
+[The LHCb physics programme](physics.html)
 
-At some point this might evolve into something coherent. 
+At some point this might evolve into something coherent.
+
+
+For more general searches, INSPIRE-HEP has a comprehensive catalogue of physics papers: [http://inspirehep.net/](http://inspirehep.net/)
+
+You can find all the LHCb papers by simply searching for my name and the LHCb collaboration, i.e.:
+
+`find a m alexander and collaboration lhcb`
