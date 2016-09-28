@@ -1,3 +1,5 @@
+# LHCb projects reading list
+
 Here you'll find reading materials for starting projects on LHCb physics. These are broadly grouped into three categories:
 
 [Introductory particle physics](introphys.html)
