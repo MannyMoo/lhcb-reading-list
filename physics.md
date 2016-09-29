@@ -10,6 +10,8 @@ These two papers are generic overviews of the main physics analyses done at LHCb
 
 ## B physics
 
+[Performance of Hybrid Photon Detectors and Studies of Two-Body Hadronic B Decays at LHCb](https://cds.cern.ch/record/1232049/files/CERN-THESIS-2010-004.pdf), Laurence Carson. Including derivation of $B$ meson CP violation and mixing parameters. 
+
 Latest measurement of time-dependent CP asymmetries in $B_d^0$ and $B_s^0 \rightarrow hh$ decays:
 
 [First measurement of time-dependent $CP$ violation in $B^0_s \rightarrow K^+K^−$ decays](http://inspirehep.net/record/1246901)
@@ -68,6 +70,8 @@ Discovery of Bd->proton-antiproton:
 
 ### Time dependent CP violation
 
+[Constraints on Mixing and CP-Violation in the Neutral Charmed Meson System at LHCb](https://cds.cern.ch/record/1494111/files/Thesis-2012-Alexander.pdf), Michael Alexander. Including derivation of $D$ meson CP violation and mixing parameters.
+
 Time dependent CP asymmetry measurements in D0->h+h- (semi-leptonic tagged, ratio method):
 
 [Measurement of indirect $CP$ asymmetries in $D^0\rightarrow K^-K^+$ and $D^0\rightarrow \pi^-\pi^+$ decays using semileptonic $B$ decays](http://arxiv.org/abs/1501.06777)
@@ -86,6 +90,13 @@ Also of interest, mixing & CP violation in D0->Kpi:
 
 ### Lifetimes
 
+Neil's summer project report on measuring $\Lambda_c^+$ and $\Xi_c^+$ lifetimes:
+
+[Measurement of lifetime for the $\Lambda_c^+$ and $\Xi_c^+$ charmed baryons](http://ppewww.physics.gla.ac.uk/~malexander/teaching/reading-list/2016-NWarrack-CharmedHadronLifetime.pdf)
+
+Gediminas's masters project report on the same (preceding Neil's work):
+
+[Lifetime measurements of $\Lambda_c^+$ and $\Xi_c^+$ baryons](http://ppewww.physics.gla.ac.uk/~malexander/teaching/reading-list/2016-GSarpis_Final_Report_1106143s_BaryonLifetimeMeasurements.pdf)
 
 Theory paper predicting baryon lifetime ratios (table 1):
 
@@ -95,10 +106,18 @@ Theory paper predicting baryon lifetime ratios (table 1):
 
 [Lifetimes and HQE](http://arxiv.org/pdf/1405.3601v1.pdf)
 
-Lambda_c lifetime measurement from FOCUS (for reference, different method used):
+$\Lambda_c^+$ lifetime measurement from FOCUS (for reference, different method used):
 
 [A High statistics measurement of the $\Lambda^+_c$ lifetime](http://inspirehep.net/record/582481)
 
-Xi_c lifetime measurement from FOCUS:
+$\Xi_c^+$ lifetime measurement from FOCUS:
 
 [A New measurement of the $\Xi^+_c$ lifetime](http://inspirehep.net/record/563670)
+
+$\Xi_c^0$ lifetime measurement from FOCUS:
+
+[A New measurement of the Xi0(c) lifetime](http://inspirehep.net/record/589409)
+
+$\Omega_c^0$ lifetime measurement from FOCUS:
+
+[Measurement of the Omega0(c) lifetime](http://inspirehep.net/record/613856)
