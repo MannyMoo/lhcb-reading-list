@@ -82,7 +82,7 @@ Semi-leptonic tagged $\Delta A_{CP}$:
 
 [Search for CP violation in the phase space of $D^0\rightarrow \pi^+\pi^−\pi^+\pi^−$ decays](https://cds.cern.ch/record/2209546)
 
-"Miranda method" search for direct CP violation in $D^0 \rightarrow \pi^+\pi^-\pi^+\pi^-$ and $D^0 \rightarrow \K^+\K^-\pi^+\pi^-$:
+"Miranda method" search for direct CP violation in $D^0 \rightarrow \pi^+\pi^-\pi^+\pi^-$ and $D^0 \rightarrow K^+ K^-\pi^+\pi^-$:
 
 [Model-independent search for CP violation in $D^0\rightarrow K^−K^+\pi^−\pi^+$ and $D^0\rightarrow \pi^−\pi^+\pi^+\pi^−$ decays](https://cds.cern.ch/record/1577360?ln=en)
 
