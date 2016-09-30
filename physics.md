@@ -80,6 +80,14 @@ D* tagged, "swimming" & ratio method:
 
 [Measurements of indirect CP asymmetries in $D^0\to K^-K^+$ and $D^0\to\pi^-\pi^+$ decays](http://arxiv.org/pdf/1310.7201.pdf)
 
+Run I average of $A^\Gamma$, using "swimming" method:
+
+[CP-violating asymmetries from the decay-time distribution of prompt $D^0\rightarrow K^+K^−$ and $D^0\rightarrow \pi^+\pi−$ decays in the full LHCb Run 1 data sample. Measurement using unbinned, acceptance corrected decay-time.](https://cds.cern.ch/record/2220093)
+
+Run I average of $A^\Gamma$ using ratio method:
+
+[CP-violating asymmetries from the decay-time distribution of prompt $D^0\rightarrow K^+K^−$ and $D^0\rightarrow \pi^+\pi^−$ decays in the full LHCb Run 1 data sample. Measurement using yield asymmetries in bins of decay time.](https://cds.cern.ch/record/2220079)
+
 Theory paper, derivation of CP violation via effective lifetimes:
 
 [On the interplay of direct and indirect CP violation in the charm sector](http://arxiv.org/abs/1111.6515)
