@@ -68,6 +68,24 @@ Discovery of Bd->proton-antiproton:
 
 ## Charm physics
 
+### Direct CP violation
+
+$D^*$ tagged $\Delta A_{CP}$:
+
+[Measurement of the difference of time-integrated CP asymmetries in $D^0\rightarrow K^−K^+$ and $D^0\rightarrow\pi^−\pi^+$ decays](https://cds.cern.ch/record/2130762?ln=en)
+
+Semi-leptonic tagged $\Delta A_{CP}$:
+
+[Measurement of CP asymmetry in $D^0\rightarrow K^−K^+$ and $D^0\rightarrow \pi^−\pi^+$ decays](https://cds.cern.ch/record/1700967)
+
+"Energy test" search for direct CP violation in $D^0 \rightarrow \pi^+\pi^-\pi^+\pi^-$:
+
+[Search for CP violation in the phase space of $D^0\rightarrow \pi^+\pi^−\pi^+\pi^−$ decays](https://cds.cern.ch/record/2209546)
+
+"Miranda method" search for direct CP violation in $D^0 \rightarrow \pi^+\pi^-\pi^+\pi^-$ and $D^0 \rightarrow \K^+\K^-\pi^+\pi^-$:
+
+[Model-independent search for CP violation in $D^0\rightarrow K^−K^+\pi^−\pi^+$ and $D^0\rightarrow \pi^−\pi^+\pi^+\pi^−$ decays](https://cds.cern.ch/record/1577360?ln=en)
+
 ### Time dependent CP violation
 
 [Constraints on Mixing and CP-Violation in the Neutral Charmed Meson System at LHCb](https://cds.cern.ch/record/1494111/files/Thesis-2012-Alexander.pdf), Michael Alexander. Including derivation of $D$ meson CP violation and mixing parameters.
