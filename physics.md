@@ -84,7 +84,7 @@ Semi-leptonic tagged $\Delta A_{CP}$:
 
 "Miranda method" search for direct CP violation in $D^0 \rightarrow \pi^+\pi^-\pi^+\pi^-$ and $D^0 \rightarrow K^+ K^-\pi^+\pi^-$:
 
-[Model-independent search for CP violation in $D^0\rightarrow K^−K^+\pi^−\pi^+$ and $D^0\rightarrow \pi^−\pi^+\pi^+\pi^−$ decays](https://cds.cern.ch/record/1577360?ln=en)
+[Model-independent search for CP violation in $D^0\rightarrow K^−K^+\pi^−\pi^+$ and $D^0\rightarrow \pi^−\pi^+\pi^+\pi^−$ decays](https://cds.cern.ch/record/1577360?ln=en) and [analysis note](https://twiki.cern.ch/twiki/pub/LHCbPhysics/D2hhhhCPV/CPVFourPi_v5r3.pdf). 
 
 ### Time dependent CP violation
 
