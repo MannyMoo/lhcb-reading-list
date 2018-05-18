@@ -8,6 +8,8 @@ Here you'll find reading materials for starting projects on LHCb physics. These 
 
 [The LHCb physics programme](physics.html)
 
+[Analysis software](computing.html)
+
 At some point this might evolve into something coherent.
 
 
