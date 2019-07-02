@@ -1,0 +1,163 @@
+\documentclass{report}
+
+\title{Flavour physics}
+\author{M. Alexander}
+
+\input{lhcb-symbols-preamble}
+\usepackage{amsmath}
+
+\def\PPbar{\ensuremath{\bar{\PP}}\xspace}
+\def\PPp{\ensuremath{\PP_{+1}}\xspace}
+\def\PPm{\ensuremath{\PP_{-1}}\xspace}
+\def\Deltam{\ensuremath{\Delta m}\xspace}
+\def\Deltagamma{\ensuremath{\Delta\Gamma}\xspace}
+\def\lambdahl{\ensuremath{\lambda_{H,L}}\xspace}
+\def\lambdalh{\ensuremath{\lambda_{L,H}}\xspace}
+\def\PPhl{\ensuremath{\PP_{H,L}}\xspace}
+\def\PPlh{\ensuremath{\PP_{L,H}}\xspace}
+\def\PPh{\ensuremath{\PP_H}\xspace}
+\def\PPl{\ensuremath{\PP_L}\xspace}
+\def\half{\ensuremath{\frac{1}{2}}\xspace}
+\def\ihalf{\ensuremath{\frac{i}{2}}\xspace}
+\def\PPk{\ensuremath{\PP_k}\xspace}
+\def\PPkm{\ensuremath{\PP_{-k}}\xspace}
+\newcommand\magsq[1]{\ensuremath{\left|#1\right|^2}\xspace}
+\def\hamil{\ensuremath{\mathcal{H}}\xspace}
+
+\begin{document}
+
+For neutral mesons, \PP and \PPbar, the mixing matrix is
+\begin{equation}
+  \bf{M} = \begin{pmatrix}
+    M & M_{12} \\
+    M_{12}^{*} & M
+  \end{pmatrix},
+\end{equation}
+and the decay matrix is
+\begin{equation}
+  \bf{\Gamma} = \begin{pmatrix}
+    \Gamma & \Gamma_{12} \\
+    \Gamma_{12}^{*} & \Gamma
+  \end{pmatrix}.
+\end{equation}
+
+The effective Hamiltonian is thus
+\begin{equation}
+  \bf{\mathcal{H}_\mathrm{eff}} = \bf{M} - \frac{i}{2} \bf{\Gamma}.
+\end{equation}
+To find the eigenvalues, one has
+\begin{equation}
+  \begin{pmatrix} M - \frac{i}{2} \Gamma & M_{12} - \frac{i}{2} \Gamma_{12} \\
+    M_{12}^* - \frac{i}{2} \Gamma_{12}^* & M - \frac{i}{2} \Gamma
+  \end{pmatrix}
+  \begin{pmatrix} p \\ \pm q \end{pmatrix}
+  = \lambda_{1,2} \begin{pmatrix} p \\ \pm q \end{pmatrix},
+\end{equation}
+with
+\begin{equation}
+  \lambda_{1,2} = m_{1,2} - \ihalf \Gamma_{1,2},
+\end{equation}
+so
+\begin{align}
+  \mathrm{Re}(\lambda_{1,2}) &= m_{1,2}, \\
+  -2 \mathrm{Im}(\lambda_{1,2}) &= \Gamma_{1,2}.
+\end{align}
+Then one has
+\begin{align}
+  \lambda_{1,2} p &= \left(M - \ihalf \Gamma\right) p \pm \left(M_{12} - \ihalf \Gamma_{12}\right) q,\\
+  \pm \lambda_{1,2} q &= \left(M_{12}^* - \ihalf \Gamma_{12}^*\right) p \pm \left(M - \ihalf \Gamma\right) q.
+\end{align}
+which gives
+\begin{align}
+  \lambda_{1,2} &= \left(M - \ihalf \Gamma\right) \pm \left(M_{12} - \ihalf \Gamma_{12}\right) \frac{q}{p}, \\
+  & = \left(M - \ihalf \Gamma\right) \pm \left(M_{12}^* - \ihalf \Gamma_{12}^*\right) \frac{p}{q}.
+\end{align}
+
+TODO: work out how to get to the eigenvalues.
+
+Thus the eigenvalues are:
+\begin{align}
+  \lambda_{1,2} &= M \mp |M_{12}| - \frac{i}{2}(\Gamma \mp |\Gamma_{12}|), \\
+  &\equiv M \mp \frac{1}{2} \Deltam - \frac{i}{2}\left(\Gamma \mp \frac{1}{2} \Deltagamma\right),\\
+  &\equiv \lambdalh.
+\end{align}
+The corresponding mass eigenstates are
+\begin{equation}
+  \ket{\PPlh} = p \ket{\PP} \pm q \ket{\PPbar},
+\end{equation}
+with time evolution
+\begin{align}
+  \ket{\PPlh(t)} &= \exp(-i \lambdalh t) \ket{\PPlh(0)}, \\
+  &= \exp(-i \lambdalh t)(p\ket{\PP(0)} \pm q \ket{\PPbar(0)}.
+\end{align}
+Then,
+\begin{align}
+  \ket{\PP(t)} & = \frac{1}{2p}(\ket{\PPh(t)} + \ket{\PPl(t)}) \\
+  & = \frac{1}{2p}\big(\exp(-i\lambda_H t)(p\ket{\PP(0)} - q \ket{\PPbar(0)}) \\
+  & \quad + \exp(-i\lambda_L t)(p\ket{\PP(0)} + q \ket{\PPbar(0)})\big) \\
+  &= \half \bigg[\left(\exp(-i\lambda_H t) + \exp(-i\lambda_L t)\right) \ket{\PP(0)} \\
+    & \quad - \frac{q}{p}\left(\exp(-i\lambda_H t) - \exp(-i\lambda_L t)\right) \ket{\PPbar(0)}\bigg].
+\end{align}
+Similarly,
+\begin{align}
+  \ket{\PPbar(t)} & = \frac{1}{2q}(\ket{\PPl(t)} - \ket{\PPh(t)}) \\
+  & = \frac{1}{2q}\big(\exp(-i\lambda_L t)(p\ket{\PP(0)} + q \ket{\PPbar(0)}) \\
+  & \quad - \exp(-i\lambda_H t)(p\ket{\PP(0)} - q \ket{\PPbar(0)})\big) \\
+  &= \half \bigg[\left(\exp(-i\lambda_H t) + \exp(-i\lambda_L t)\right) \ket{\PPbar} \\
+    & \quad - \frac{p}{q}\left(\exp(-i\lambda_H t) - \exp(-i\lambda_L t)\right) \ket{\PP}\bigg].
+\end{align}
+Defining $\PPp \equiv \PP$ and $\PPm \equiv \PPbar$, then
+\begin{align}
+  \ket{\PPk} &= \half \bigg[\left(\exp(-i \lambda_H t) + \exp(-i \lambda_L t)\right) \ket{\PPk(0)} \\
+    & \quad + \frac{q}{p}^k \left(\exp(-i \lambda_H t) - \exp(-i \lambda_L t)\right) \ket{\PPkm(0)}\bigg], \\
+    &\equiv g_+(t) \ket{\PPk(0)} + \left(\frac{q}{p}\right)^k g_-(t) \ket{\PPkm(0)},
+\end{align}
+using
+\begin{align}
+  g_\pm(t) &\equiv \half \left(\exp(-i \lambda_H t) \pm \exp(-i \lambda_L t)\right), \\
+  &= \half \left( \exp\left(-i \left(M + \half \Deltam - \frac{i}{2} \left(\Gamma + \half\Deltagamma\right)\right) t\right) \pm \exp\left(-i \left(M - \half \Deltam - \frac{i}{2} \left(\Gamma - \half\Deltagamma\right)\right) t\right)\right), \\
+  &= \half \exp\left(-i M t + \half \Gamma t \right) \left(\exp\left(-\frac{i}{2} \Deltam t - \frac{1}{4} \Deltagamma t\right) \pm \exp\left(\frac{i}{2} \Deltam t + \frac{1}{4} \Deltagamma t\right)\right).
+\end{align}
+
+Then,
+\begin{align}
+  \magsq{A_{f,k}(t)} &= \magsq{\bra{f}\hamil\ket{\PPk(t)}},\\
+  &= \left(g_+^*(t)\bra{f}\hamil\ket{\PPk(0)}^* + \left(\frac{q}{p}\right)^{k*} g_-^*(t) \bra{f}\hamil\ket{\PPkm(0)}^*\right) \\
+    & \quad \left(g_+(t) \bra{f}\hamil\ket{\PPk(0)} + \left(\frac{q}{p}\right)^k g_-(t) \bra{f}\hamil\ket{\PPkm(0)}\right), \\
+  &= \magsq{g_+(t)}\magsq{A_{f,k}(0)}  + \left(\frac{q}{p}\right)^k g_+^*(t)g_-(t)A_{f,k}^*(0) A_{f,-k}(0) \\
+  &\quad + \left(\frac{q}{p}\right)^{k*} g_-^*(t) g_{+}(t) A_{f,-k}^*(0) A_{f,k}(0) + \left|\frac{q}{p}\right|^{2k} \magsq{g_-(t)}\magsq{A_{f,-k}(0)}, \\
+  &= \magsq{g_+(t)} \magsq{A_{f,k}(0)} + \left|\frac{q}{p}\right|^{2k} \magsq{g_-(t)}\magsq{A_{f,-k}(0)} \\
+  &\quad + 2 \mathrm{Re}\left(\left(\frac{q}{p}\right)^k g_+^*(t)g_-(t) A_{f,k}^*(0)A_{f,-k}(0) \right).
+\end{align}
+
+Using,
+\begin{align}
+  \magsq{g_\pm(t)} &= \frac{1}{4} \exp(-\Gamma t) \left[\exp\left(\frac{i}{2}\Deltam t - \frac{1}{4} \Deltagamma t\right) \pm \exp\left(\frac{-i}{2}\Deltam t + \frac{1}{4} \Deltagamma t\right)\right] \\
+  & \quad \left[\exp\left(\frac{-i}{2}\Deltam t - \frac{1}{4} \Deltagamma t\right) \pm \exp\left(\frac{i}{2}\Deltam t + \frac{1}{4} \Deltagamma t\right)\right], \\
+  &= \frac{1}{4} \exp(-\Gamma t) \left[\exp\left(-\half \Deltagamma t\right) \pm \exp\left(i\Deltam t\right) \pm \exp(-i\Deltam t) + \exp\left(\half\Deltagamma t\right)\right], \\
+  &= \frac{1}{2} \exp(-\Gamma t)\left[\cosh\left(\half \Deltagamma t\right) \pm \cos(\Deltam t)\right],
+\end{align}
+
+and
+
+\begin{align}
+  g_+^*(t)g_-(t) &= \frac{1}{4} \exp(-\Gamma t) \left[\exp\left(\frac{i}{2}\Deltam t - \frac{1}{4} \Deltagamma t\right) + \exp\left(\frac{-i}{2}\Deltam t + \frac{1}{4} \Deltagamma t\right)\right] \\
+  & \quad \left[\exp\left(\frac{-i}{2}\Deltam t - \frac{1}{4} \Deltagamma t\right) - \exp\left(\frac{i}{2}\Deltam t + \frac{1}{4} \Deltagamma t\right)\right], \\
+  &= \frac{1}{4} \exp(-\Gamma t) \left[\exp\left(-\half \Deltagamma t\right) - \exp\left(i\Deltam t\right) + \exp(-i\Deltam t) - \exp\left(\half\Deltagamma t\right)\right], \\
+  &= \frac{1}{2} \exp(-\Gamma t)\left[-\sinh\left(\half \Deltagamma t\right) + i \sin(\Deltam t)\right],
+\end{align}
+
+then
+
+\begin{align}
+  \magsq{A_{f,k}(t)} &= \frac{1}{2} \exp(-\Gamma t)\Bigg[\left(\cosh\left(\half \Deltagamma t\right) + \cos(\Deltam t)\right) \magsq{A_{f,k}(0)} \\
+    & \qquad + \left|\frac{q}{p}\right|^{2k} \left(\cosh\left(\half \Deltagamma t\right) - \cos(\Deltam t)\right) \magsq{A_{f,-k}(0)} \\
+    & \qquad + 2 \mathrm{Re}\left(\left(\frac{q}{p}\right)^k \left(-\sinh\left(\half \Deltagamma t\right) + i \sin(\Deltam t)\right) A_{f,k}^*(0)A_{f,-k}(0)\right)\Bigg], \\
+  &= \frac{1}{2} \exp(-\Gamma t)\Bigg[\left(\magsq{A_{f,k}(0)} + \left|\frac{q}{p}\right|^{2k} \magsq{A_{f,-k}(0)}\right) \cosh\left(\half \Deltagamma t\right) \\
+    & \qquad + \left(\magsq{A_{f,k}(0)} - \left|\frac{q}{p}\right|^{2k} \magsq{A_{f,-k}(0)}\right) \cos(\Deltam t) \\
+    & \qquad - 2 \mathrm{Re}\left(\left(\frac{q}{p}\right)^k A_{f,k}^*(0)A_{f,-k}(0) \right) \sinh\left(\half \Deltagamma t\right) \\
+    & \qquad -2 \mathrm{Im}\left(\left(\frac{q}{p}\right)^k A_{f,k}^*(0)A_{f,-k}(0)\right) \sin(\Deltam t) \Bigg]
+\end{align}
+
+
+\end{document}
