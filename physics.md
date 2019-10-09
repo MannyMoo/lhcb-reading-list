@@ -114,7 +114,7 @@ These are papers on B and Bs mixing:
 
 - Mixing with D0->Kshh (thesis):
 
-  [Measurement of the mixing parameters of neutral charm mesons and search for indirect CP violation with $D0\rightarrow K^0_S\pi+\pi− decays at LHCb](http://cds.cern.ch/record/2200139/files/CERN-THESIS-2015-348.pdf)
+  [Measurement of the mixing parameters of neutral charm mesons and search for indirect CP violation with $D0\rightarrow $K^0_S\pi+\pi−$ decays at LHCb](http://cds.cern.ch/record/2200139/files/CERN-THESIS-2015-348.pdf)
 
 - Mixing with $D^0 \rightarrow \pi^+\pi^-\pi^0$, using full time dependent phase space modelling:
 
