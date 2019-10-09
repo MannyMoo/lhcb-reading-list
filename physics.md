@@ -8,6 +8,8 @@ These two papers are generic overviews of the main physics analyses done at LHCb
 
 - [Implications of LHCb measurements and future prospects](http://inspirehep.net/record/1127719)
 
+- [Review of decay-time dependent mixing in neutral mesons](papers/LHCb-INT-2011-051.pdf)
+
 ## B physics
 
 - [Performance of Hybrid Photon Detectors and Studies of Two-Body Hadronic B Decays at LHCb](https://cds.cern.ch/record/1232049/files/CERN-THESIS-2010-004.pdf), Laurence Carson. Including derivation of $B$ meson CP violation and mixing parameters. 
@@ -68,15 +70,15 @@ These are papers on B and Bs mixing:
 
 ## Charm physics
 
+- Extensive review of the history of charm physics (up til 2003):
+
+  [A Cicerone for the physics of charm](https://inspirehep.net/record/627328)
+
 ### Direct CP violation
 
-- $D^*$ tagged $\Delta A_{CP}$:
+- Discovery of CP violation in charm: $\Delta A_{CP}$ with $D^*$ tagged and semi-leptonic tagged $D^0\rightarrow h^+h^-$:
 
-  [Measurement of the difference of time-integrated CP asymmetries in $D^0\rightarrow K^−K^+$ and $D^0\rightarrow\pi^−\pi^+$ decays](https://cds.cern.ch/record/2130762?ln=en)
-
-- Semi-leptonic tagged $\Delta A_{CP}$:
-
-  [Measurement of CP asymmetry in $D^0\rightarrow K^−K^+$ and $D^0\rightarrow \pi^−\pi^+$ decays](https://cds.cern.ch/record/1700967)
+  [Observation of CP Violation in Charm Decays](http://inspirehep.net/record/1726338)
 
 - "Energy test" search for direct CP violation in $D^0 \rightarrow \pi^+\pi^-\pi^+\pi^-$:
 
@@ -90,21 +92,13 @@ These are papers on B and Bs mixing:
 
 - [Constraints on Mixing and CP-Violation in the Neutral Charmed Meson System at LHCb](https://cds.cern.ch/record/1494111/files/Thesis-2012-Alexander.pdf), Michael Alexander. Including derivation of $D$ meson CP violation and mixing parameters.
 
+- Time dependent CP asymmetry measurements using $D^0 \rightarrow h^+h^-$, $D^*$ tagged:
+
+  [Search for time-dependent CP violation in $D^0\rightarrow K^+K^−$ and $D^0\rightarrow\pi^+\pi^−$ decays](http://cds.cern.ch/record/2674875?ln=en)
+
 - Time dependent CP asymmetry measurements in D0->h+h- (semi-leptonic tagged, ratio method):
 
   [Measurement of indirect $CP$ asymmetries in $D^0\rightarrow K^-K^+$ and $D^0\rightarrow \pi^-\pi^+$ decays using semileptonic $B$ decays](http://arxiv.org/abs/1501.06777)
-
-- D* tagged, "swimming" & ratio method:
-
-  [Measurements of indirect CP asymmetries in $D^0\to K^-K^+$ and $D^0\to\pi^-\pi^+$ decays](http://arxiv.org/pdf/1310.7201.pdf)
-
-- Run I average of $A^\Gamma$, using "swimming" method:
-
-  [CP-violating asymmetries from the decay-time distribution of prompt $D^0\rightarrow K^+K^−$ and $D^0\rightarrow \pi^+\pi−$ decays in the full LHCb Run 1 data sample. Measurement using unbinned, acceptance corrected decay-time.](https://cds.cern.ch/record/2220093)
-
-- Run I average of $A^\Gamma$ using ratio method:
-
-  [CP-violating asymmetries from the decay-time distribution of prompt $D^0\rightarrow K^+K^−$ and $D^0\rightarrow \pi^+\pi^−$ decays in the full LHCb Run 1 data sample. Measurement using yield asymmetries in bins of decay time.](https://cds.cern.ch/record/2220079)
 
 - Theory paper, derivation of CP violation via effective lifetimes:
 
@@ -114,11 +108,25 @@ These are papers on B and Bs mixing:
 
   [Measurement of $D^0-\bar{D}^0$ mixing parameters and search for CP violation using $D^0\rightarrow K^+\pi^-$ decays](http://arxiv.org/abs/1309.6534)
 
+- Mixing in $D^0 \rightarrow K_S^0 \pi^+ \pi^-$ as a function of phase space ("bin-flip" method):
+
+  [Measurement of the mass difference between neutral charm-meson eigenstates](https://inspirehep.net/record/1724179)
+
 - Mixing with D0->Kshh (thesis):
 
   [Measurement of the mixing parameters of neutral charm mesons and search for indirect CP violation with $D0\rightarrow K^0_S\pi+\pi− decays at LHCb](http://cds.cern.ch/record/2200139/files/CERN-THESIS-2015-348.pdf)
 
+- Mixing with $D^0 \rightarrow \pi^+\pi^-\pi^0$, using full time dependent phase space modelling:
+
+  [Measurement of the neutral 𝐷 meson mixing parameters in a time-dependent amplitude analysis of the $D^0\rightarrow \pi^+\pi^−\pi^0$ decay](https://inspirehep.net/record/1441203)
+
 ### Lifetimes
+
+- Latest baryon lifetime measurements from LHCb:
+
+  [Measurement of the $\Omega^0_c$ baryon lifetime](https://inspirehep.net/record/1681144)
+
+  [Precision measurement of the $\Lambda^+_c$, $\Xi^+_c$ and $\Xi_0^c$ baryon lifetimes](https://inspirehep.net/record/1740743)
 
 - Neil's summer project report on measuring $\Lambda_c^+$ and $\Xi_c^+$ lifetimes:
 
