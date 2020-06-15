@@ -8,7 +8,7 @@ These two papers are generic overviews of the main physics analyses done at LHCb
 
 - [Implications of LHCb measurements and future prospects](http://inspirehep.net/record/1127719)
 
-- [Review of decay-time dependent mixing in neutral mesons](papers/LHCb-INT-2011-051.pdf)
+- [__Review of decay-time dependent mixing in neutral mesons__](papers/LHCb-INT-2011-051.pdf)
 
 ## B physics
 
@@ -69,6 +69,10 @@ These are papers on B and Bs mixing:
   [First evidence for the two-body charmless baryonic decay $B^0 \to p \bar{p}$](http://inspirehep.net/record/1246367)
 
 ## Charm physics
+
+- __Introduction to charm physics & CP violation__:
+
+  [Introduction to Charm Physics](https://inspirehep.net/literature/1346952)
 
 - Extensive review of the history of charm physics (up til 2003):
 
