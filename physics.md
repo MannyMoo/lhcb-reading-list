@@ -80,9 +80,13 @@ These are papers on B and Bs mixing:
 
   [Observation of CP Violation in Charm Decays](http://inspirehep.net/record/1726338)
 
-- "Energy test" search for direct CP violation in $D^0 \rightarrow \pi^+\pi^-\pi^+\pi^-$:
+- "Energy test" model-independent search for direct CP violation in $D^0 \rightarrow \pi^+\pi^-\pi^+\pi^-$:
 
   [Search for CP violation in the phase space of $D^0\rightarrow \pi^+\pi^−\pi^+\pi^−$ decays](https://cds.cern.ch/record/2209546)
+
+- "Energy test" search for direct CP violation in $D^0\rightarrow\pi^+\pi^-\pi^0$:
+
+  [Search for CP violation in $D^0 \to \pi^− \pi^+ \pi^0$ decays with the energy test](https://inspirehep.net/literature/1322386)
 
 - "Miranda method" search for direct CP violation in $D^0 \rightarrow \pi^+\pi^-\pi^+\pi^-$ and $D^0 \rightarrow K^+ K^-\pi^+\pi^-$:
 
@@ -108,22 +112,23 @@ These are papers on B and Bs mixing:
 
   [Measurement of $D^0-\bar{D}^0$ mixing parameters and search for CP violation using $D^0\rightarrow K^+\pi^-$ decays](http://arxiv.org/abs/1309.6534)
 
-- Mixing in $D^0 \rightarrow K_S^0 \pi^+ \pi^-$ as a function of phase space ("bin-flip" method):
+- __Mixing in $D^0 \rightarrow K_S^0 \pi^+ \pi^-$ as a function of phase space ("bin-flip" method)__:
 
   [Measurement of the mass difference between neutral charm-meson eigenstates](https://inspirehep.net/record/1724179)
 
-- Detailed derivation of "bin-flip" method:
+- __Detailed derivation of "bin-flip" method__:
+
   [Novel method for measuring charm-mixing parameters using multibody decays](https://inspirehep.net/literature/1702145)
 
 - Mixing with D0->Kshh (thesis):
 
-  [Measurement of the mixing parameters of neutral charm mesons and search for indirect CP violation with $D0\rightarrow $K^0_S\pi+\pi−$ decays at LHCb](http://cds.cern.ch/record/2200139/files/CERN-THESIS-2015-348.pdf)
+  [Measurement of the mixing parameters of neutral charm mesons and search for indirect CP violation with $D^0\rightarrow K^0_S\pi+\pi−$ decays at LHCb](http://cds.cern.ch/record/2200139/files/CERN-THESIS-2015-348.pdf)
 
-- Mixing with $D^0 \rightarrow \pi^+\pi^-\pi^0$, using full time dependent phase space modelling:
+- __Mixing with $D^0 \rightarrow \pi^+\pi^-\pi^0$, using full time dependent phase space modelling__:
 
   [Measurement of the neutral 𝐷 meson mixing parameters in a time-dependent amplitude analysis of the $D^0\rightarrow \pi^+\pi^−\pi^0$ decay](https://inspirehep.net/record/1441203)
 
-- Measurement of the phase space model of $D^0 \rightarrow K^+K^-\pi^0$:
+- __Measurement of the phase space model of $D^0 \rightarrow K^+K^-\pi^0$__:
 
   [Amplitude analysis of the decay D0 -> K- K+ pi0](https://inspirehep.net/literature/749390)
 
