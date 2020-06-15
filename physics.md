@@ -112,6 +112,9 @@ These are papers on B and Bs mixing:
 
   [Measurement of the mass difference between neutral charm-meson eigenstates](https://inspirehep.net/record/1724179)
 
+- Detailed derivation of "bin-flip" method:
+  [Novel method for measuring charm-mixing parameters using multibody decays](https://inspirehep.net/literature/1702145)
+
 - Mixing with D0->Kshh (thesis):
 
   [Measurement of the mixing parameters of neutral charm mesons and search for indirect CP violation with $D0\rightarrow $K^0_S\pi+\pi−$ decays at LHCb](http://cds.cern.ch/record/2200139/files/CERN-THESIS-2015-348.pdf)
@@ -119,6 +122,10 @@ These are papers on B and Bs mixing:
 - Mixing with $D^0 \rightarrow \pi^+\pi^-\pi^0$, using full time dependent phase space modelling:
 
   [Measurement of the neutral 𝐷 meson mixing parameters in a time-dependent amplitude analysis of the $D^0\rightarrow \pi^+\pi^−\pi^0$ decay](https://inspirehep.net/record/1441203)
+
+- Measurement of the phase space model of $D^0 \rightarrow K^+K^-\pi^0$:
+
+  [Amplitude analysis of the decay D0 -> K- K+ pi0](https://inspirehep.net/literature/749390)
 
 ### Lifetimes
 
