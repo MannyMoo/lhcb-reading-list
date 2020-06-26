@@ -25,7 +25,7 @@
 <pre><code>wget https://raw.githubusercontent.com/MannyMoo/commandline-utils/master/setup.sh
 sh setup.sh -g -u &lt;github username&gt; -e &lt;github email&gt;
 rm setup.sh</code></pre>
-<p>where <code>&lt;github username&gt;</code> and <code>&lt;github email&gt;</code> should be the username and email address used to set up your github account. Follow the instructions to copy the generated public key into your github account. Again, I don’t normally bother with a password for the key pair. This should allow you to push &amp; pull from Github without needing a password, which is tested in the last step. You should see</p>
+<p>where <code>&lt;github username&gt;</code> and <code>&lt;github email&gt;</code> should be the username and email address used to set up your github account. This will configure git and generate an ssh key pair to use with your git account. Follow the instructions it prints to copy the generated public key into your github account. Again, I don’t normally bother with a password for the key pair. This should allow you to push &amp; pull from Github without needing a password, which is tested in the last step. You should see</p>
 <pre><code>Hi &lt;username&gt;! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</code></pre>
 <p>You can check out all the other useful functions installed in <code>~/lib/bash/commandline-utils</code>. I also have in my login script:</p>
 <pre><code>export COMMANDLINEUTILSROOT=~/lib/bash/commandline-utils/

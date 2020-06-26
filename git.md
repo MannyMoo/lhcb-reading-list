@@ -12,7 +12,7 @@ sh setup.sh -g -u <github username> -e <github email>
 rm setup.sh
 ```
 
-where `<github username>` and `<github email>` should be the username and email address used to set up your github account. Follow the instructions to copy the generated public key into your github account. Again, I don't normally bother with a password for the key pair. This should allow you to push & pull from Github without needing a password, which is tested in the last step. You should see
+where `<github username>` and `<github email>` should be the username and email address used to set up your github account. This will configure git and generate an ssh key pair to use with your git account. Follow the instructions it prints to copy the generated public key into your github account. Again, I don't normally bother with a password for the key pair. This should allow you to push & pull from Github without needing a password, which is tested in the last step. You should see
 
 ```
 Hi <username>! You've successfully authenticated, but GitHub does not provide shell access.
