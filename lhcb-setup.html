@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>computing</title>
+  <title>lhcb-setup</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -18,11 +18,9 @@
   <![endif]-->
 </head>
 <body>
-<p><a href="ssh.html">Tips for logging in with SSH</a></p>
-<p><a href="git.html">Version control with git &amp; Github</a></p>
-<p><a href="lhcb-setup.html">LHCb environment setup</a></p>
-<p><a href="root.html">ROOT</a></p>
-<p><a href="https://mannymoo.github.io/IntroductionToPython/">Python</a></p>
-<p><a href="https://lhcb.github.io/starterkit-lessons/first-analysis-steps/index.html">LHCb software starter-kit</a></p>
+<h1 id="setting-up-the-lhcb-software-environment">Setting up the LHCb software environment</h1>
+<p>The LHCb software environment sets up all the software you’ll need and ensures that everything uses compatible versions. Having <a href="../git.html">set up git</a>, you then want to install utilities for the LHCb environment by doing</p>
+<pre><code>eval &quot;$(curl -fsSL https://raw.github.com/MannyMoo/lhcb-project-utils/master/setup.sh)&quot;</code></pre>
+<p>This will modify <code>~/.bashrc</code> so that it sets up the LHCb software environment automatically on login. Then you should be ready to run and develop LHCb software.</p>
 </body>
 </html>
