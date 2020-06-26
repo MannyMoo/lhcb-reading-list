@@ -1,3 +1,5 @@
+[Tips for logging in with SSH](ssh.html)
+
 [ROOT](root.html)
 
 [Python](https://mannymoo.github.io/IntroductionToPython/)
