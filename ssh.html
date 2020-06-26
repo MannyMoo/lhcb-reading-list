@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ssh</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="tips-for-logging-into-glasgow-machines-using-ssh">Tips for logging into Glasgow machines using ssh</h1>
+<h2 id="easy-logins">Easy logins</h2>
+<p>You can log in to the Glasgow network from the commandline with <a href="https://www.ssh.com/ssh/">ssh</a> (“secure shell”) as detailed <a href="https://twiki.ppe.gla.ac.uk/bin/view/IT/RemoteAccess#SSH">here</a>. On Linux or OSX, open up a terminal and enter:</p>
+<pre><code>ssh username@ppelx.physics.gla.ac.uk</code></pre>
+<p>replacing <code>username</code> with the username for your PPE computing account. For Windows machines, you can use some of the software listed <a href="https://twiki.ppe.gla.ac.uk/bin/view/IT/WindowsSSH">here</a> (<a href="http://mobaxterm.mobatek.net/">MobaXterm</a> seems to work well).</p>
+<p>To avoid having to give your username and full address every time, you can create an ssh config file, as described <a href="https://linuxize.com/post/using-the-ssh-config-file/">here</a>. First make the <code>~/.ssh</code> directory and <code>~/.ssh/config</code> file and set their permissions so only you can read or write to them:</p>
+<pre><code>mkdir -p ~/.ssh
+chmod 0700 ~/.ssh
+touch ~/.ssh/config
+chmod 600 ~/.ssh/config</code></pre>
+<p>My <code>~/.ssh/config</code> file contains:</p>
+<pre><code># Glasgow PPE.
+host ppe*
+    User username
+    Hostname %h.gla.ac.uk
+
+# Defaults for all hosts
+host *
+    Protocol 2
+    PubkeyAuthentication      yes
+    PasswordAuthentication    yes
+    GSSAPIAuthentication yes
+    GSSAPIDelegateCredentials yes
+    ForwardX11 yes
+    ForwardX11Trusted yes
+    ServerAliveInterval 60
+    ServerAliveCountMax 3
+    IdentityFile ~/.ssh/id_rsa</code></pre>
+<p>Again you should replace <code>username</code> with the username for your PPE account. You can also configure ssh settings with the windows clients, eg, for <a href="https://mobaxterm.mobatek.net/documentation.html#4_1">MobaXterm</a>. Then you should be able simply to do</p>
+<pre><code>ssh ppelx.physics</code></pre>
+<p>This logs you in to one of the shared gateway machines. You shouldn’t use these for any intensive work, so it’s best to log in to a personal desktop from there. Each desktop on the PPE network has a name like <code>ppeNNN</code> which you can get from the sticker on the machine, eg, my desktop (the one physically sat at my desk) is <code>ppepc48</code>. So to log in to there from <code>ppelx</code>, you can simply do</p>
+<pre><code>ssh ppepc48</code></pre>
+<p>You can also get a list of all machines on the PPE network from ppelx with</p>
+<pre><code>arp</code></pre>
+<p>To avoid having to do the double login, you can use, eg</p>
+<pre><code>ssh -t ppelx.physics ssh ppepc48</code></pre>
+<p>which will log you in directly to <code>ppepc48</code> via <code>ppelx</code>. On Linux and OSX, you can add an alias for this command in your login script, eg</p>
+<pre><code>alias mydesktop=&quot;ssh -t ppelx.physics ssh ppepc48&quot;</code></pre>
+<p>Your login script is normally <code>~/.bashrc</code> if you’re using bash, although I like zsh with <a href="https://github.com/ohmyzsh/ohmyzsh">oh-my-zsh</a>, in which case the login script is <code>~/.zshrc</code>. This is executed every time you open a new terminal, so you can put useful aliases, functions, and environment variables there, as well as sourcing other scripts.</p>
+<p>Then, when you next open a new terminal, you can log in directly to <code>ppepc48</code> with just</p>
+<pre><code>mydesktop</code></pre>
+<p>To login without needing a password, you can create and use a key pair as detailed <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2">here</a>, eg:</p>
+<pre><code>ssh-keygen -t rsa
+cat ~/.ssh/id_rsa.pub | ssh ppelx.physics &quot;mkdir -p ~/.ssh &amp;&amp; chmod 700 ~/.ssh &amp;&amp; cat &gt;&gt;  ~/.ssh/authorized_keys&quot;</code></pre>
+<p>I normally don’t bother entering a passphrase for the key pair - just make sure never to give anyone else access to your private key! With your ssh config set up as above, you should then be able to use <code>mydesktop</code> to log in without needing to enter a password.</p>
+<h2 id="persistent-sessions-with-tmuxscreen">Persistent sessions with <code>tmux</code>/<code>screen</code></h2>
+<p>When you close an ssh session (with <code>^D</code> or <code>logout</code>), or if your connection is interrupted, any processes you’re running are killed, which is quite inconvenient. To avoid this, you can create a persistent session with <code>tmux</code>, detailed <a href="https://linuxize.com/post/getting-started-with-tmux/">here</a>, or if <code>tmux</code> isn’t installed, you can use its predecessor <code>screen</code> which will likely be installed. You can create a <code>tmux</code> or <code>screen</code> session, detach from it, and log out, and your processes will keep running. You can then log back in, reattach the session, and continue as before. This also works if your connection is interrupted.</p>
+<p>You can create multiple different sessions with different names (say if you’re working on more than one project). To create a new session with name <code>name</code>, do</p>
+<pre><code>tmux new-session -s name</code></pre>
+<p>Within the session, you can work as usual at the commandline. You can have multiple windows per session. To create a new one use <code>^b+c</code>. To switch between windows use <code>^b+n</code> for the next or <code>^b+p</code> for the previous window. For scrollback, do <code>^b+[</code>, use <code>PageUp</code> and <code>PageDown</code> to scroll, and hit <code>Esc</code> when you’re done scrolling.</p>
+<p>To detach from a session, do <code>^b+d</code>, which will return you to the login terminal. To reattach a session named <code>name</code>, do</p>
+<pre><code>tmux attach -t name</code></pre>
+<p><code>screen</code> is very similar but with slightly different key bindings.</p>
+<p>You can customise the behaviour of <code>tmux</code> by editing <code>~/.tmux.conf</code>, detailed <a href="https://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/">here</a>. For instance, I prefer to use <code>^z</code> as the control command rather than <code>^b</code>, and to have a larger scrollback limit than the default. So I have in my <code>~/.tmux.conf</code>:</p>
+<pre><code># remap prefix from &#39;C-b&#39; to &#39;C-z&#39;
+unbind C-b
+set-option -g prefix C-z
+bind-key C-z send-prefix
+
+# Set scrollback buffer to 50000
+set -g history-limit 50000</code></pre>
+<p>Hopefully this will make your life a lot easier when working over ssh!</p>
+</body>
+</html>
