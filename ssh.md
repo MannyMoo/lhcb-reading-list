@@ -1,5 +1,9 @@
 # Tips for logging into Glasgow machines using ssh
 
+## Working at the commandline
+
+If you're unfamiliar with this, Section I of the [Theoretical Physics 3 Computer Laboratory](https://moodle.gla.ac.uk/course/view.php?id=4315#section-7) is a good start.
+
 ## Easy logins
 
 You can log in to the Glasgow network from the commandline with [ssh](https://www.ssh.com/ssh/) ("secure shell") as detailed [here](https://twiki.ppe.gla.ac.uk/bin/view/IT/RemoteAccess#SSH). On Linux or OSX, open up a terminal and enter:
