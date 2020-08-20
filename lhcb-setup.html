@@ -19,8 +19,16 @@
 </head>
 <body>
 <h1 id="setting-up-the-lhcb-software-environment">Setting up the LHCb software environment</h1>
+<p>Note that this assumes you’re working on a PPE machine at Glasgow (and not <code>ppelx</code> or <code>ppelogin</code>). It might be possible to get this to work elsewhere, but would take extra work.</p>
 <p>The LHCb software environment sets up all the software you’ll need and ensures that everything uses compatible versions. Having <a href="git.html">set up git</a>, you then want to install utilities for the LHCb environment by doing</p>
 <pre><code>eval &quot;$(curl -fsSL https://raw.github.com/MannyMoo/lhcb-project-utils/master/setup.sh)&quot;</code></pre>
-<p>This will modify <code>~/.bashrc</code> so that it sets up the LHCb software environment automatically on login. Then you should be ready to run and develop LHCb software.</p>
+<p>This will modify <code>~/.bashrc</code> so that it sets up the LHCb software environment automatically on login. Then you should be ready to run and develop LHCb software. “Setting up the environment” is mainly about defining <a href="https://phoenixts.com/blog/environment-variables-in-linux/">environment variables</a> so that you can access the necessary software executables and libraries, and ensuring that the software versions are all consistent and linked properly. Eg, you’ll find that you now have the <code>lb-run</code> command, which is used to setup and run LHCb software packages. More information on that can be found <a href="https://lhcb.github.io/starterkit-lessons/first-analysis-steps/davinci.html">here</a>.</p>
+<p>You’ll also have a <code>root-env</code> command, to set up a basic environment with just ROOT. If you just enter</p>
+<pre><code>root-env</code></pre>
+<p>then this will start an interactive shell in the ROOT environment, so you can use the <code>root</code> executable, and also <code>import ROOT</code> in python, and any other ROOT functionality you want to use. You can also give commands to <code>root-env</code>, which will be executed in the ROOT environment without starting a new interactive shell. Eg, to open a .root file:</p>
+<pre><code>root-env root -l myfile.root</code></pre>
+<p>or start an <code>ipython</code> session:</p>
+<pre><code>root-env ipython</code></pre>
+<p>This way of setting up and working in different environments is key to the LHCb software.</p>
 </body>
 </html>
