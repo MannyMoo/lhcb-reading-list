@@ -1,15 +1,13 @@
 For ROOT, the main reference is here:
 
-[https://root.cern.ch/documentation](https://root.cern.ch/documentation)
+[https://root.cern/get_started/](https://root.cern/get_started)
 
-and here:
+From there, have a look at the ROOT Primer:
 
-[https://root.cern.ch/courses](https://root.cern.ch/courses)
+[https://root.cern/primer](https://root.cern/primer)
 
-To start, have a look through
+and courses:
 
-[https://root.cern.ch/first-steps-root](https://root.cern.ch/first-steps-root)
+[https://root.cern/get_started/courses/](https://root.cern/get_started/courses)
 
-For some info on using ROOT with python see here:
-
-[https://root.cern.ch/pyroot](https://root.cern.ch/pyroot)
+In particular, the tutorial for CERN summer students is useful.
