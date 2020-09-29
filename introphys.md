@@ -30,8 +30,8 @@ For general information about particle physics and all the different particles t
 
 [http://pdg.lbl.gov](http://pdg.lbl.gov)
 
-In particular, [PDGLive](http://pdglive.lbl.gov/Viewer.action) contains a table of info on all known particles, eg the [$B^0$ meson](http://pdglive.lbl.gov/Particle.action?node=S042).
+In particular, [PDGLive](http://pdglive.lbl.gov/Viewer.action) contains a table of info on all known particles, eg the [$B^0$ meson](http://pdglive.lbl.gov/Particle.action?node=S042). If you click on the "INSPIRE search" button at the top right, you can find all papers about the $B^0$.
 
 ## The Heavy Flavour Averaging Group
 
-[HFAG](http://www.slac.stanford.edu/xorg/hfag/) produces averages of measurements relating to flavour physics, eg, mixing and CP violation parameters, CKM angles, etc. For example, [here](http://www.slac.stanford.edu/xorg/hfag/osc/spring_2016/#DMD) is the latest average of the mass difference between $B^0$ mass eigenstates, $\Delta m_d$, and [here](http://www.slac.stanford.edu/xorg/hfag/charm/Winter16/DCPV/direct_indirect_cpv.html) is the global fit of direct and indirect CP violation in the charm sector. 
+[HFLAV](https://hflav.web.cern.ch/) produces averages of measurements relating to flavour physics, eg, mixing and CP violation parameters, CKM angles, etc. For example, [here](https://hflav-eos.web.cern.ch/hflav-eos/osc/PDG_2020/#DMD) is the latest average of the mass difference between $B^0$ mass eigenstates, $\Delta m_d$, and [here](https://hflav-eos.web.cern.ch/hflav-eos/charm/Moriond19/DCPV/direct_indirect_cpv.html) is the global fit of direct and indirect CP violation in the charm sector.

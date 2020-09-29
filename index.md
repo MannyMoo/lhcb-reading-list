@@ -10,6 +10,12 @@ Here you'll find reading materials for starting projects on LHCb physics. These 
 
 [Analysis software](computing.html)
 
+[Analysis beginner's guide](analysis-starter.html)
+
+[Tips for reports & presentations](writing-tips.html)
+
+[Glossary of terms](glossary.html)
+
 At some point this might evolve into something coherent.
 
 
