@@ -2,7 +2,7 @@
 
 ## Working at the commandline
 
-If you're unfamiliar with this, Section I of the [Theoretical Physics 3 Computer Laboratory](https://moodle.gla.ac.uk/course/view.php?id=4315#section-7) is a good start.
+If you're unfamiliar with this, Section I of the [Theoretical Physics 3 Computer Laboratory](https://moodle.gla.ac.uk/course/view.php?id=4315#section-7) is a good start (notes available [here](papers/P3_computing_course_notes.pdf)).
 
 ## Easy logins
 

@@ -32,6 +32,12 @@ For general information about particle physics and all the different particles t
 
 In particular, [PDGLive](http://pdglive.lbl.gov/Viewer.action) contains a table of info on all known particles, eg the [$B^0$ meson](http://pdglive.lbl.gov/Particle.action?node=S042). If you click on the "INSPIRE search" button at the top right, you can find all papers about the $B^0$.
 
+Also, the PDG has many reviews on all aspects of particle physics at
+
+[https://pdg.lbl.gov/2020/reviews/contents_sports.html](https://pdg.lbl.gov/2020/reviews/contents_sports.html)
+
+These are generally quite accessible and useful references.
+
 ## The Heavy Flavour Averaging Group
 
 [HFLAV](https://hflav.web.cern.ch/) produces averages of measurements relating to flavour physics, eg, mixing and CP violation parameters, CKM angles, etc. For example, [here](https://hflav-eos.web.cern.ch/hflav-eos/osc/PDG_2020/#DMD) is the latest average of the mass difference between $B^0$ mass eigenstates, $\Delta m_d$, and [here](https://hflav-eos.web.cern.ch/hflav-eos/charm/Moriond19/DCPV/direct_indirect_cpv.html) is the global fit of direct and indirect CP violation in the charm sector.
